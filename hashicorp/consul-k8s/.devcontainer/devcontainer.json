@@ -1,0 +1,27 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+	"name": "hashicorp/consul-k8s",
+	"dockerFile": "Dockerfile",
+	"runArgs": [
+		"--cap-add=SYS_PTRACE",
+		"--security-opt", "seccomp=unconfined"
+	],
+	"workspaceMount": "src=/c/Users/pabouwer/Documents/GitHub/paulbouwer/consul-k8s,dst=/go/src/consul-k8s,type=bind,consistency=cached",
+	"workspaceFolder": "/go/src/consul-k8s",
+	
+	// Uncomment the next line if you want to publish any ports.
+	// "appPort": [],
+
+	// Uncomment the next line to run commands after the container is created.
+	// "postCreateCommand": "go version",
+
+	"extensions": [
+		"ms-vscode.go"
+	],
+	"settings": {
+		"go.gopath": "/go",
+		"go.toolsEnvVars": {
+			"GO111MODULE": "on"
+		}
+	}
+}
