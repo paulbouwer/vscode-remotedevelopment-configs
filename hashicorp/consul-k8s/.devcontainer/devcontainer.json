@@ -6,7 +6,7 @@
 		"--cap-add=SYS_PTRACE",
 		"--security-opt", "seccomp=unconfined"
 	],
-	"workspaceMount": "src=/c/Users/pabouwer/Documents/GitHub/paulbouwer/consul-k8s,dst=/go/src/consul-k8s,type=bind,consistency=cached",
+	"workspaceMount": "src={REPLACE_THIS_WITH_WORKSPACE_MOUNT_SRC},dst=/go/src/consul-k8s,type=bind,consistency=cached",
 	"workspaceFolder": "/go/src/consul-k8s",
 	
 	// Uncomment the next line if you want to publish any ports.

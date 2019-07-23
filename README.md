@@ -2,7 +2,16 @@
 
 This is a collection of **VSCode Remote Development - Containers** configurations for projects that I contribute to on GitHub. 
 
-- hashicorp/consul-k8s
+- [hashicorp/consul-k8s](https://github.com/hashicorp/consul-k8s)
+- [kubernetes/release](https://github.com/kubernetes/release)
+
+Replace the `{REPLACE_THIS_WITH_WORKSPACE_MOUNT_SRC}` value with the hardcoded value of your source code working folder. This path must be of the form `/path/on/host/`.
+
+You can use the following PowerShell to convert a Windows path to the correct format:
+
+```powershell
+$PWD.Path.Replace('\','/').Replace('C:','/c').toLower()
+```
 
 # VS Code Remote Development
 
